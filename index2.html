@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 200px minmax(100px, max-content);
+      grid-gap: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, minmax(100px, max-content));
+      }
+    }
+
+    .grid>div {
+      width: 100%;
+      color: white;
+      font-size: 20px;
+      background: #e84393;
+      /* Align Numbers only */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <title>CSS Grid #2 - Two column layout</title>
+</head>
+
+<body>
+  <div class="container grid">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic quisquam alias fuga itaque porro perferendis natus, magnam
+      ex tenetur minima fugiat laudantium voluptatem ratione libero nisi nam error veniam.</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+grid-gap
+firefox debug tool
+max-content / min-content
+media query
+ -->
