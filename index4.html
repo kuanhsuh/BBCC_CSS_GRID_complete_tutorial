@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .grid {
+      width: 800px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(2, 200px);
+      grid-gap: 10px;
+    }
+
+    .grid>* {
+      background-color: #D6A2E8;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+      font-family: sans-serif;
+    }
+
+    .box {
+      grid-column: 3 / -1;
+      grid-row: 2 / -1;
+    }
+  </style>
+  <title>Layout - Grid-column / Grid Row Demo</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="box">box</div>
+  </div>
+</body>
+
+</html>
+
+<!--
+  Quick Demo: grid column/ grid row
+  position
+-->

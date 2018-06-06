@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .grid {
+      width: 800px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-rows: 200px 200px;
+      grid-template-columns: 200px 200px 200px;
+      grid-gap: 20px;
+      /* justify-content: center; */
+      /* align-content */
+      justify-items: end;
+    }
+
+    .grid>* {
+      background-color: #273c75;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+      font-family: sans-serif;
+      width: 100%;
+    }
+
+    .sm {
+      width: 100px;
+      justify-self: center;
+    }
+
+    .md {
+      width: 150px;
+    }
+
+    .lg {
+      width: 200px;
+    }
+  </style>
+  <title>Layout - Alignment</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="box sm">1</div>
+    <div class="box md">2</div>
+    <div class="box lg">3</div>
+    <div class="box lg">4</div>
+    <div class="box md">5</div>
+    <div class="box sm">6</div>
+  </div>
+</body>
+
+</html>
+
+<!--
+  alignment - justify-content, justify-items, justify-self
+-->

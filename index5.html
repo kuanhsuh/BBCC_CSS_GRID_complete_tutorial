@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .grid {
+      width: 1000px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 200px;
+      grid-template-rows: 100px 400px 200px 100px;
+      grid-gap: 30px;
+    }
+
+    .grid>* {
+      background-color: #273c75;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+      font-family: sans-serif;
+    }
+
+    .header {
+      grid-column: 1 / -1;
+    }
+
+    .sidebar {
+      grid-column: 4 / -1;
+      grid-row: 2 / 4;
+    }
+
+    .main {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      grid-row: 4 / -1;
+    }
+  </style>
+  <title>Layout - Line Names</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="header">Header</div>
+    <div class="box">Small box 1</div>
+    <div class="box">Small box 2</div>
+    <div class="box">Small box 3</div>
+    <div class="main">Main content</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>
+
+<!--
+  Line Names
+-->

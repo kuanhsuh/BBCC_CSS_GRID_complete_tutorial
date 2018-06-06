@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .grid {
+      width: 1000px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 200px;
+      grid-template-rows: 100px 400px 200px 100px;
+      grid-gap: 30px;
+      grid-template-areas: "h h h h"
+                           "sb b1 b2 b3"
+                           "sb m m m"
+                           "f f f f"
+    }
+
+    .grid>* {
+      background-color: #273c75;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+      font-family: sans-serif;
+    }
+
+    .header {
+      grid-area: h;
+    }
+
+    .sidebar {
+      grid-area: sb;
+    }
+
+    .main {
+      grid-area: m;
+    }
+
+    .box-1 { grid-area: b1;}
+    .box-2 { grid-area: b2;}
+    .box-3 { grid-area: b3;}
+    .footer {
+      grid-area: f;
+    }
+  </style>
+  <title>Layout - Line Names</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="header">Header</div>
+    <div class="box-1">Small box 1</div>
+    <div class="box-2">Small box 2</div>
+    <div class="box-3">Small box 3</div>
+    <div class="main">Main content</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>
+
+<!--
+  Line Names
+-->
