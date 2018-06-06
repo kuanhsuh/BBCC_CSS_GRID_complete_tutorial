@@ -1,7 +1,5 @@
 ## Big Boy Can Code Tutorial
 
-![final demo](https://imgur.com/a/UxKe21z)
-https://imgur.com/a/UxKe21z
 
 1. display: grid, grid-template-columns, grid-column-gap, fr, minmax, repeat
 
